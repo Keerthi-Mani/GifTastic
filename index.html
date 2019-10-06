@@ -13,6 +13,13 @@
     <!-- Font Awesome CSS Icons (For cool glyphicons) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
+    <!-- CSS style  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
     <title>GIPHY API</title>
 </head>
 
@@ -20,40 +27,25 @@
 <body>
     <div id="container">
 
-        <!-- ROW 1 BUTTONS ARE CREATED FOR WATER ANIMALS -->
-        <div id="row">
-
-            <div id="col-md-12">
-                <div id="animal_buttons">
-
-                </div><br>
-            </div>
+        <!-- Buttons are created for water animals -->
+        <div id="buttons">
+            <div id="animal_buttons">
+            </div><br>
         </div>
 
-        <!-- ROW 2 -->
-        <div id="row">
-
-            <div id="col-lg-8">
-                <div id="animals">
-
-                </div>
-            </div>
-
-            <div id="col-lg-4">
-
-                <form id="animal_forms">
-                    <label for="animal_input"><strong>Add Water Animal</strong></label><br><br>
-                    <input type="text" id="animal_input" size=40px;><br><br>
-                    <input id="add_animal" type="submit" value="Submit">
-                </form>
-
-            </div>
+        <!--  Images of sea animals are dumped in here -->
+        <div id="animals">
         </div>
 
-        <!-- jQuery JS -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <div id="sea-input">
+            <form id="animal_forms">
+                <label for="animal_input"><strong>Add Water Animal</strong></label><br><br>
+                <input type="text" id="animal_input" size=40px;><br><br>
+                <input id="add_animal" type="submit" value="Submit">
+            </form>
+        </div>
+
+
         <!-- Code to the JavaScript File -->
         <script src="assets/javascript/API.js"></script>
     </div>

@@ -14,6 +14,9 @@ $(document).ready(function () {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
+            console.log(queryURL);
+            console.log(response);
+
             var result = response.data;
             $("#animals").empty();
             for (var i = 0; i < result.length; i++) {
@@ -25,20 +28,28 @@ $(document).ready(function () {
                 animalDiv.append(p);
 
                 var seaAnimalImages = $("<img>");
-                //var animate = result[i].images.fixed_height.url;
+                var animated = result[i].images.fixed_height.url;
                 var still = result[i].images.fixed_height_still.url;
+                seaAnimalImages.addClass("waterAnimal-Images");
                 seaAnimalImages.attr("src", still);
+                seaAnimalImages.attr("data-still", still);
+                seaAnimalImages.attr("data-animate", animated);
+                seaAnimalImages.attr("data-state", "still");
                 animalDiv.append(seaAnimalImages);
-
                 $("#animals").append(animalDiv);
+
+                // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+                $(".waterAnimal-Images").on("click", function () {
+
+                    var state = $(this).attr("data-state");
+                    // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+                    // Then, set the image's data-state to animate
+                    if (state === "still") {
+                        $(this).attr("src", $(this).attr("data-animate"));
+                        $(this).attr("data-state", "animate");
+                    }
+                });
             }
-            /*if (state === "still") {
-                    $(this).attr("src", $(this).attr("data-animate"));
-                    $(this).attr("data-state", "animate");
-                  } else {
-                    $(this).attr("src", $(this).attr("data-still"));
-                    $(this).attr("data-state", "still");
-                  }*/
         });
     }
 
