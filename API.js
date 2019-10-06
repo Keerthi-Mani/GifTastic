@@ -48,7 +48,7 @@ $(document).ready(function () {
         $("#animal_buttons").empty();
         for (i = 0; i < waterAnimals.length; i++) {
             var animalButtons = $("<button>");
-            animalButtons.addClass("animals");
+            animalButtons.addClass("animal-buttons");
             animalButtons.attr("data-name", waterAnimals[i]);
             animalButtons.text(waterAnimals[i]);
             $("#animal_buttons").append(animalButtons);
