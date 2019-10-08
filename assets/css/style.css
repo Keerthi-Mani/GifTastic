@@ -1,9 +1,46 @@
 body {
-    background-color: brown;
+    background-image: url("../images/662959.png");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container {
+margin: 20px;
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 80px;
 }
 .animal-buttons {
     margin-top: 10px;
     margin-right: 5px;
     margin-left: 5px;
     padding-top: 5px;
+    background-color: orangered;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#sea-input {
+    float:right;
+    margin-right: 5px;
+}
+
+#add_animal {
+    border-radius: 5px;
+    background-color: orangered;
+    font-weight: bold;
+}
+
+#display {
+    display:inline-block;
+    clear:both;
+}
+
+#animals {
+    width:100%;
 }

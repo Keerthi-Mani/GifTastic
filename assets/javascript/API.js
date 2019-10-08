@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // Initial array of water animals
-    var waterAnimals = ["Fish", "Shark", "Whale", "Dolphin", "Squid", "Octopus", "Crab", "Sting Ray", "Star Fish", "Sea Horse", "Sea Turtle", "Lobster", "Otter", "Sea Lion", "Walrus", "Coral", "Frog", "Sea Cucumber", "Eel", "Penguins", "Shrimp", "Clams"];
+    var waterAnimals = ["Shark", "Whale", "Dolphin", "Squid", "Octopus", "Sting Ray", "Star Fish", "Otter", "Sea Lion", "Walrus", "Coral", "Sea Cucumber", "Eel", "Penguins", "Clams"];
 
     // displaywaterAnimalInfo function re-renders the HTML to display the appropriate content
     function displaywaterAnimalsInfo() {
@@ -30,7 +30,7 @@ $(document).ready(function () {
                 var seaAnimalImages = $("<img>");
                 var animated = result[i].images.fixed_height.url;
                 var still = result[i].images.fixed_height_still.url;
-                seaAnimalImages.addClass("waterAnimal-Images");
+                seaAnimalImages.attr("class", "waterAnimal-Images");
                 seaAnimalImages.attr("src", still);
                 seaAnimalImages.attr("data-still", still);
                 seaAnimalImages.attr("data-animate", animated);
@@ -38,15 +38,20 @@ $(document).ready(function () {
                 animalDiv.append(seaAnimalImages);
                 $("#animals").append(animalDiv);
 
+
                 // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-                $(".waterAnimal-Images").on("click", function () {
+                $("#animals").on("click", ".waterAnimal-Images", function () {
 
                     var state = $(this).attr("data-state");
                     // If the clicked image's state is still, update its src attribute to what its data-animate value is.
                     // Then, set the image's data-state to animate
                     if (state === "still") {
                         $(this).attr("src", $(this).attr("data-animate"));
-                        $(this).attr("data-state", "animate");
+                        $(this).attr("data-state", "animated");
+                    }
+                    else {
+                        $(this).attr("src", $(this).attr("data-still"));
+                        $(this).attr("data-state", "still");
                     }
                 });
             }
@@ -76,7 +81,7 @@ $(document).ready(function () {
         // The movie from the textbox is then added to our array
         waterAnimals.push(userInput);
 
-        // calling renderButtons which handles the processing of our movie array
+        // calling renderButtons which handles the processing of our water animal array
         renderButtons();
     });
 
