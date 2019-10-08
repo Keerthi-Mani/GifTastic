@@ -38,3 +38,13 @@ h1 {
     background-color: orangered;
     font-weight: bold;
 }
+
+#animals {
+    display:inline-flex;
+    flex-wrap: wrap;
+    
+}
+.waterAnimal-Images {
+    margin: 10px;
+    padding: 10px;
+}
