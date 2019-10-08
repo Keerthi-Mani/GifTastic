@@ -4,6 +4,8 @@
 
 Because GIFs make life fun! Use Giphy API from Giphy Developers.  Check out Giphy Labs for inspiration.
 
+![](http://i.imgur.com/OUkLi.gif)
+
 ## Scripting/Programming Languages
 
 * HTML
@@ -19,7 +21,7 @@ Because GIFs make life fun! Use Giphy API from Giphy Developers.  Check out Giph
 
 ## Installation
 
-Download your GIPHY Developer app. Manage your apps, create your app and sign in to get your API Key. 
+Download your [GIPHY Developer]() app. Manage your apps, create your app and sign in to get your API Key. 
 
 
 ## Usage
@@ -59,5 +61,5 @@ https://api.giphy.com/v1/gifs/search?q=" + topics
 ```
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md]() file for details
 MIT © [Keerthi Mani]()
