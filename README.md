@@ -4,7 +4,7 @@
 
 Because GIFs make life fun! Use Giphy API from Giphy Developers.  Check out Giphy Labs for inspiration.
 
-![](http://i.imgur.com/OUkLi.gif)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 ## Scripting/Programming Languages
 
