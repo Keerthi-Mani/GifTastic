@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/662959.png");
+    background-image: url("../images/XAP-Red-Back.jpg");
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -8,13 +8,14 @@ margin: 20px;
 }
 
 p {
-    color: black;
+    color: white;
 }
 
 h1 {
     text-align: center;
-    color: black;
-    font-size: 80px;
+    color: white;
+    font-size: 70px;
+    text-shadow: 5px 5px 5px black;
 }
 .animal-buttons {
     margin-top: 10px;
@@ -36,11 +37,7 @@ h1 {
     font-weight: bold;
 }
 
-#display {
+#animals {
     display:inline-block;
     clear:both;
-}
-
-#animals {
-    width:100%;
 }
