@@ -12,6 +12,11 @@ Because GIFs make life fun! Use Giphy API from Giphy Developers.  Check out Giph
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/52920074/66431475-0b236980-e9ea-11e9-8af3-0a8e18c9cb1f.gif)
+
+![image](https://user-images.githubusercontent.com/52920074/66431448-ff37a780-e9e9-11e9-8b5d-4d4095d4f412.png)
+
+
 ## Installation
 
 Download your GIPHY Developer app. Manage your apps, create your app and sign in to get your API Key. 
