@@ -21,7 +21,8 @@ Download your GIPHY Developer app. Manage your apps, create your app and sign in
 
 Set the API version and api_key.
 
-```        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=bKRakmKXT6210rxtpqBRT0Qi7xZgBdLE&limit=10";
+``` 
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=bKRakmKXT6210rxtpqBRT0Qi7xZgBdLE&limit=10";
 ```
 
 Syntax for Ajax call: 
