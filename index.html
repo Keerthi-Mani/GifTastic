@@ -25,30 +25,29 @@
 
 
 <body>
-    <h1>GIF TASTIC</h1>
-    <div id="container">
 
+    <div id="container">
+        <h1>GIF TASTIC</h1>
         <!-- Buttons are created for water animals -->
 
         <div id="animal_buttons">
-        </div><br>
-
-        <div id="sea-input">
-            <form id="animal_forms">
-                <label for="animal_input">
-                    <bold>Add Water
-                        Animal</bold>
-                </label><br><br>
-                <input type="text" id="animal_input" size=30px;><br><br>
-                <input id="add_animal" type="submit" value="Submit">
-            </form>
         </div>
 
+        <br><br>
+
+        <form id="animal_forms">
+            <label for="animal_input">
+                <h4>Add Water Animal</h4>
+            </label><br>
+            <input type="text" id="animal_input" size=30px;><br><br>
+            <input id="add_animal" type="submit" value="Submit">
+        </form>
+        <br>
         <!--  Images of sea animals are dumped in here -->
-
-        <div id="animals">
+        <div class="row">
+            <div id="animals">
+            </div>
         </div>
-
         <!-- Code to the JavaScript File -->
         <script src="assets/javascript/API.js"></script>
     </div>

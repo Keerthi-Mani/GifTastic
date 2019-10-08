@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
     // Initial array of water animals
-    var waterAnimals = ["Shark", "Whale", "Dolphin", "Squid", "Octopus", "Sting Ray", "Star Fish", "Otter", "Sea Lion", "Walrus", "Coral", "Sea Cucumber", "Eel", "Penguins", "Clams"];
+    var waterAnimals = ["Shark", "Whale", "Lemon Shark", "Lizard", "Dolphin", "Squid", "Octopus", "Sting Ray", "Star Fish", "Otter", "Sea Lion", "Walrus", "Coral", "Sea Cucumber", "Eel", "Penguins", "Clams"];
 
     // displaywaterAnimalInfo function re-renders the HTML to display the appropriate content
     function displaywaterAnimalsInfo() {
 
         var topics = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=bKRakmKXT6210rxtpqBRT0Qi7xZgBdLE&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=bKRakmKXT6210rxtpqBRT0Qi7xZgBdLE&limit=10";
 
         // Creating an AJAX call for the specific waterAnimals button being clicked
         $.ajax({
