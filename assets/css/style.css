@@ -1,54 +1,53 @@
-
 body {
-    background-image: url("../images/XAP-Red-Back.jpg");
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("../images/XAP-Red-Back.jpg");
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #animal_forms {
-    float:right;
+  float: right;
 }
 
 #container {
-margin: 20px;
+  margin: 20px;
 }
 
-p,h4 {
-    color: white;
+p,
+h4 {
+  color: white;
 }
 
 p {
-    margin-left:20px;
+  margin-left: 20px;
 }
 
 h1 {
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    text-shadow: 5px 5px 5px orange;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 5px 5px 5px orange;
 }
 .animal-buttons {
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-top: 5px;
-    background-color: orangered;
-    border-radius: 5px;
-    font-weight: bold;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 5px;
+  background-color: orangered;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px lightsalmon;
 }
 
-
 #add_animal {
-    border-radius: 5px;
-    background-color: orangered;
-    font-weight: bold;
+  border-radius: 5px;
+  background-color: orangered;
+  font-weight: bold;
 }
 
 #animals {
-    display:inline-flex;
-    flex-wrap: wrap;
-    
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 .waterAnimal-Images {
-    margin: 10px;
-    padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
