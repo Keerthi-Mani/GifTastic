@@ -42,7 +42,7 @@ h1 {
   background-color: orangered;
   font-weight: bold;
 }
-
+/* images are wrapped horizontally */
 #animals {
   display: inline-flex;
   flex-wrap: wrap;
